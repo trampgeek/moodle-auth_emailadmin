@@ -11,6 +11,7 @@ function auth_emailadmin_validate_extend_signup_form($data) {
         'gmx.de', 'intermediate-website', 'yahoo', 'ragnortheblue', 'qq.com',
         'erpin.org', 'icloud.com', 'rrunua.xyz', 'shitmail'];
     $email = $data['email'];
+    $errors = [];
     foreach ($disallowed as $bad) {
         if (strpos($email, $bad) !== false) {
             $errors['email'] = $bademail;

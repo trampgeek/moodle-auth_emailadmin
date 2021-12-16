@@ -9,7 +9,7 @@ function auth_emailadmin_validate_extend_signup_form($data) {
     $badinstitution = 'You must be at a recognised international educational institution with an internet presence that can be checked';
     $disallowed = ['gmail.com', 'hotmail', 'outlook', 'pochtampt', 'usgeek',
         'gmx.de', 'intermediate-website', 'yahoo', 'ragnortheblue', 'qq.com',
-        'erpin.org', 'icloud.com', 'rrunua.xyz', 'shitmail'];
+        'erpin.org', 'icloud.com', 'rrunua.xyz', 'shitmail', 'mail.ru'];
     $email = $data['email'];
     $errors = [];
     foreach ($disallowed as $bad) {

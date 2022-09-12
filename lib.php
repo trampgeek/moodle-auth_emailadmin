@@ -6,7 +6,7 @@
  */
 function auth_emailadmin_validate_extend_signup_form($data) {
     $bademail = 'Due to a recent spam attack this site is no longer accepting generic email address such as at gmail, hotmail, icloud etc. Instead you must provide an educational institution and your email address must be at that institution';
-    $badinstitution = 'Your institution does not appear to be a recognised international educational institution. If you still want access, please emil the site administrator directly, explaining your situation and including a web link to your institution.';
+    $badinstitution = 'Your institution does not appear to be a recognised international educational institution. If you still want access, please email the site administrator directly, explaining your situation and including a web link to your institution.';
     $disallowed = ['gmail.com', 'hotmail', 'outlook', 'pochtampt', 'usgeek','jenniferlawrence',
         'gmx.de', 'intermediate-website', 'yahoo', 'ragnortheblue', 'qq.com','faqq.org', 'yandex.ru',
         'erpin.org', 'icloud.com', 'rrunua.xyz', 'shitmail', 'mail.ru','vipcherry.com','mailcomfort.com'];
